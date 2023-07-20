@@ -1,0 +1,88 @@
+/* CSS Styles for BMI Calculator */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: orange;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.bmi-form{
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+.bmi-result {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 400px;
+    
+}
+
+.form-group {
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: rgb(34, 233, 240);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="reset"] {
+    background-color: rgb(157, 243, 87);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+#program{
+    display: flex;
+    margin-top: 20px;
+    text-align: left;
+    
+}

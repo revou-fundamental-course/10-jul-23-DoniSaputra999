@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Kalkulator BMI</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id="container">
+    <div class="judul"><h1>Kalkulator BMI</h1></div>
+      <div>
+       <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang 
+           penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana menurutmu?.
+           <br>
+           Yuk, hitungsekarang di Kalkulator BMI.
+       </p>
+      </div>
+    <div id="formSection">
+      <form id="bmiForm">
+        <label>Jenis kelamin:</label>
+            <label>
+                <input type="radio" name="jeniskelamin" value="lakilaki" required> Laki-Laki
+            </label>
+            <label>
+                <input type="radio" name="jeniskelamin" value="perempuan" required> Perempuan
+            </label>
+
+        <label for="berat">Berat badan (kg):</label>
+        <input type="number" min = "0" step = "0.1" id = "berat" required><br>
+
+        <label for="umur">Umur (tahun):</label>
+        <input type="number" min = "0" step = "1" id="umur" required><br>    
+
+        <label for="tinggi">Tinggi badan (cm):</label>
+        <input type="number" min = "0" step = "0.1" id ="tinggi" required><br>
+
+        <button type="submit">Hitung BMI</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+    <div>
+      <p>Keunggulan Fitur</p>
+      <ol>
+       <li>Menghitung Berat Badan</li>
+       <li>Menentukan Katagori berat badan ideal atau tidak </li>
+       <li>Mempersiapkan program penurunan berat badan </li>
+     </ol>
+    </div>
+    <div>
+       <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan 
+       pembacaan BMI ini) dan ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang 
+       memenuhi syarat seperti dokter 
+       </p>
+   </div>
+   <div>
+       <p>Kalkulator ini akan memberikan gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa tubuh 
+           (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter)
+           atau BMI = Kg/M2.        
+       </p>
+   </div>
+</div>
+
+    <div id="resultSection">
+      <h4>Hasil BMI</h4>
+      <div id="result"></div>
+      <div id="program"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
